@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Manrope", sans-serif;
+  /* Primary  */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  /* Neutral  */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-blue: hsl(218, 23%, 16%);
+  font-size: 28px;
+}
+body {
+  background-color: var(--Dark-blue);
+  font-family: var(--font);
+}
+.advice-app-section {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35vw;
+  background-color: var(--Dark-grayish-Blue);
+  border-radius: 0.3rem;
+  padding: 0.5rem 1.5rem;
+}
+.advice-title {
+  color: var(--Neon-Green);
+  font-size: 0.6rem;
+  margin: 0.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.advice {
+  text-align: center;
+  color: var(--Light-Cyan);
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.divider {
+  background-image: url("/images/pattern-divider-desktop.svg");
+  height: 40px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+button {
+  background-color: var(--Neon-Green);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transform: translateY(40px);
+}
+
+button:hover {
+  box-shadow: 3px 3px 50px var(--Neon-Green);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 95%;
+  }
+}
